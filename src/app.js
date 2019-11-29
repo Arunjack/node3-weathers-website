@@ -54,6 +54,13 @@ app.get('/image', (req, res) => {
     res.send('<h2>HTML Image</h2><img src="/Users/arunjack/Desktop/node-course/web-server/src/guitar.png" alt="Trulli" width="500" height="333"></body></html>')
 })
 
+app.get('/profile', (req, res) => {
+    res.setHeader('Cache-Control', 'max-age=60');
+     res.render('profile', {
+         title: 'Job Profile',
+         name: 'Arun Jack'
+     })
+ })
 app.get('/products', (req, res) => {
 
     if (!req.query.search) {
