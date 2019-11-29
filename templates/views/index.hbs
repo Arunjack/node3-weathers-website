@@ -1,0 +1,26 @@
+ {{!-- hbs to inject the dynamic values  --}}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    {{>header}} 
+    <p>This by {{name}}</p>
+    
+    <div> 
+       <form>
+           <input placeholder="Location">
+           <button>Search</button>
+       </form>
+        <p id= "message-1"> </p>
+    </div>
+
+     <script src = "/js/test.js"> </script>
+
+</body>
+
+</html>
